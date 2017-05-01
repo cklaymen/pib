@@ -1,0 +1,114 @@
+.app {
+    max-width: 800px;
+    min-width: 640px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    box-sizing: border-box;
+    height: 40px;
+    display: block;
+    outline: none;
+}
+
+input[type=number] {
+    width: 42px;
+    padding-right: 0;
+    display: inline-block;
+}
+
+input[type=datetime-local] {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 20px;
+    font-size: 9px;
+}
+
+input[type=reset] {
+    background: none;
+}
+
+input[type=reset]:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+table.users-table {
+    border-spacing: 0;
+    border-collapse: separate;
+    width: 100%;
+}
+
+    table.users-table tr th {
+        border-bottom: 1px solid #eeeeee;
+        user-select: none;
+    }
+
+    th.sort-asc:after {
+        content: ' ⇩';
+    }
+
+    th.sort-desc:after {
+        content: ' ⇧';
+    }
+
+    table.users-table tr th:hover {
+        cursor: pointer;
+    }
+
+    table.users-table th.th-experience {
+        min-width: 100px;
+    }
+
+    table.users-table tr:nth-child(even) {
+        background-color: #eeeeee;
+    }
+
+    table.users-table td, table.users-table th {
+        padding: 7px;
+    }
+
+    table.users-table td.td-dateOfBirth, table.users-table td.td-function, table.users-table td.td-experience {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    table.users-table tr.users-filter td {
+        border-top: 1px dashed #dddddd;
+        padding: 3px;
+        color: #777777;
+    }
+
+.pages-nav {
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+    .pages-nav .button-space {
+        display: inline-block;
+        width: 20px;
+    }
+
+    .pages-nav .button-next, .pages-nav .button-prev {
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin: 0 3px;
+        outline: none;
+    }
+
+    .pages-nav .button-next:hover, .pages-nav .button-prev:hover {
+        background: #eee;
+    }
+
+    .pages-nav .button-next:after {
+        content: '❭';
+    }
+
+    .pages-nav .button-prev:after {
+        content: '❬';
+    }
